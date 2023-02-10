@@ -5,7 +5,6 @@ function addNewTask() {
     if(text.length === 0) {
         alert("Tarefa precisa de ter mais de 1 caracter");
         return;
-        
     }
 
     var listItem = document.createElement("li");
@@ -17,9 +16,6 @@ function addNewTask() {
 }
 
 function removeTask() {
-    var list = document.getElementById("list");
-    var text = document.getElementById("task_name").value;
-
-    Element.remove(list);   
-
+    var task = document.querySelector(".list-item")
+    task.remove();
 }
